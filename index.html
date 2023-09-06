@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+    <div class="wrapper overflow-x-hidden">
+        <header class="absolute w-full h-[100px] flex justify-between items-center z-10 sm:h-[10vh]">
+            <div class="w-auto lg:ml-[99px] h-full flex flex-col justify-center items-center ml-6">
+                <p class="h-fit font-ubuntu text-primary-color lg:text-[30px] sm:text-lg">3D Tlač Stará Ľubovňa</p>
+            </div>
+            <nav class="w-full -translate-x-full lg:translate-x-0 h-screen lg:h-full top-0 lg:w-auto bg-primary-color absolute lg:bg-transparent lg:relative z-30">
+                <div class="lg:w-full lg:h-full hidden lg:block absolute bg-light-blue -translate-y-2 translate-x-8 skew-x-[45deg] -z-[1]"></div>
+                <div class="toggle-close w-9 h-9 flex lg:hidden relative justify-center items-center ml-auto mr-6 mt-6">
+                    <span class="w-full h-[2px] bg-white rotate-45 absolute"></span>
+                    <span class="w-full h-[2px] bg-white -rotate-45 absolute"></span>
+                </div>
+                <ul class="lg:pl-[84px] pr-16 flex flex-col lg:flex-row items-center justify-start lg:justify-between gap-[70px] h-full">
+                    <li class="w-full lg:w-auto h-fit lg:h-full flex flex-col justify-start lg:justify-center items-center">
+                        <a href="" class="font-open-sans font-normal text-xl text-white lg:text-black lg:text-base">
+                            Proces objednávky 
+                        </a>
+                    </li>
+                    <li class="w-full lg:w-auto h-fit lg:h-full flex flex-col justify-start lg:justify-center items-center">
+                        <a href="" class="font-open-sans font-normal text-xl text-white lg:text-black lg:text-base">
+                            Portfólio
+                        </a>
+                    </li>
+                    <li class="w-full lg:w-auto h-fit lg:h-full flex flex-col justify-start lg:justify-center items-center">
+                        <a href="" class="font-open-sans font-normal text-xl text-white lg:text-black lg:text-base">
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-toggle relative flex justify-center items-center w-9 h-9 mr-6 bg-primary-color rounded-md lg:hidden">
+                <span class="absolute w-[80%] h-[4px] bg-white -translate-y-2"></span>
+                <span class="absolute w-[80%] h-[4px] bg-white"></span>
+                <span class="absolute w-[80%] h-[4px] bg-white translate-y-2"></span>
+            </div>
+        </header>
+        <main class="overflow-x-hidden w-full">
+            <!-- banner -->
+            <section class="w-full h-auto relative">
+                <article class="w-full h-auto flex flex-col align-top pl-6 lg:pl-24">
+                    <h1 class="font-ubuntu font-bold text-black w-full lg:w-1/2 text-4xl lg:text-[55px] mt-[300px] lg:mt-[204px]">
+                        Dajte formu svojim víziám pomocou 3D tlače.
+                    </h1>
+                    <h2 class="font-open-sans text-black text-xl w-full lg:w-1/3 mt-12">
+                        Ponukáme kvalitnú a cenovo dostupnú 3D tlač v Starej Ľubovni. Riešenia na mieru od 3D návrhu až po 3D tlač už od jedného kusu až po seriovú výrobu.
+                    </h2>
+                    <a href="" class="font-open-sans text-white text-xl p-4 mt-12 lg:mt-24 bg-primary-color rounded-xl w-fit h-fit">
+                        Vytvoriť objednávku
+                    </a>
+                </article>
+                <section class="absolute -z-[1] top-[120px] lg:top-[234px] right-16">
+                    <img src="./public/assets/banner-bg.svg" alt="">
+                </section>
+            </section>
+            <!-- services -->
+            <section class="relative w-full h-auto mt-36 px-6 lg:px-16">
+                <h3 class="w-fit h-fit font-ubuntu text-black font-bold border-b-[7px] border-b-primary-color text-[24px] lg:text-[50px]">
+                    Náš proces objednávky
+                </h3>
+                <div class="absolute -z-[1]">
+                    <img src="./public/assets/polymap-background.svg" alt="">
+                </div>
+                <section class="mt-16 lg:mt-32 grid grid-cols-1 lg:grid-cols-3 grid-rows-3 lg:grid-rows-1 gap-y-12 lg:gap-x-20">
+                    <section class="bg-primary-shade-color rounded-[20px] p-10">
+                        <div class="flex justify-center items-center">
+                            <img src="./public/assets/card-1.svg" alt="ilustration">
+                        </div>
+                        <p class="font-ubuntu font-bold text-black text-xl lg:text-2xl mt-11 after:block after:w-[200px] after:h-[7px] after:bg-primary-color">Návrh, konzultácia 3D modelu</p>
+                        <ul class="mt-9">
+                            <p class="font-ubuntu font-bold text-black text-lg lg:text-xl">Služby: </p>
+                            <li class="list-disc text-black font-ubuntu text-lg ml-6 mt-2">Cad modelovanie: 10€/h</li>
+                        </ul>
+                        <p class="font-open-sans text-black text-base lg:text-xl mt-4">Celý proces začína 3D modelom. Či už chcete kópiu konkrétneho predmetu, alebo máte vlastný nápad, ktorý len čaká na svoju realizáciu, sme tu, aby sme vám pomohli vytvoriť akýkoľvek objekt, ktorý si predstavíte.</p>
+                    </section>
+                    <section class="bg-primary-shade-color rounded-[20px] p-10">
+                        <div class="flex justify-center items-center">
+                            <img src="./public/assets/card-2.svg" alt="ilustration">
+                        </div>
+                        <p class="font-ubuntu font-bold text-black text-xl lg:text-2xl mt-11 after:block after:w-[200px] after:h-[7px] after:bg-primary-color">Príprava na tlač a následná výroba</p>
+                        <ul class="mt-9">
+                            <p class="font-ubuntu font-bold text-black text-lg lg:text-xl">Služby:</p>
+                            <li class="list-disc text-black font-ubuntu text-lg ml-6 mt-2">3D tlač: ~2€/h</li>
+                        </ul>
+                        <p class="font-open-sans text-black text-base lg:text-xl mt-4">V momente, kedy je 3D model hotový, sa pripravuje jeho výroba. To obnáša výber farby, filamentu a pridanie nevyhnutných podporných štruktúr. Potom nasleduje tlač na tlačiarni, ktorá je optimalizovaná pre váš model</p>
+                    </section>
+                    <section class="bg-primary-shade-color rounded-[20px] p-10">
+                        <div class="flex justify-center items-center">
+                            <img src="./public/assets/card-3.svg" alt="ilustration">
+                        </div>
+                        <p class="font-ubuntu font-bold text-black text-xl lg:text-2xl mt-11 after:block after:w-[200px] after:h-[7px] after:bg-primary-color">Dodanie hotového produktu</p>
+                        <ul>
+                            <p class="font-ubuntu font-bold text-black text-lg lg:text-xl">Služby:</p>
+                            <li class="list-disc text-black font-ubuntu text-lg ml-6 mt-2">Poštovné: ~3.5€</li>
+                        </ul>
+                        <p class="font-open-sans text-black text-base lg:text-xl mt-4">Po ukončení a zabalení je vaša objednávka buďto doručovaná kuriérom priamo k vám domov, alebo máte možnosť bezplatného vyzdvihnutia v predajni EL-COMP TRADE. Otváracie hodiny si možte prezrieť tu.</p>
+                    </section>
+                </section>
+            </section>
+            <!-- products -->
+            <section class="relative w-full h-auto mt-36 px-6 lg:px-16">
+                <h3 class="w-fit h-fit font-ubuntu text-black font-bold border-b-[7px] border-b-primary-color text-[24px] lg:text-[50px]">
+                    Naše posledné výtlačky
+                </h3>
+                <section class="relative mt-16 lg:mt-32 grid grid-cols-1 lg:grid-cols-3 grid-rows-6 lg:grid-rows-2 gap-x-[117px] gap-y-6 lg:gap-y-[76px]">
+                    <div class="absolute -z-[1]">
+                        <img src="./public/assets/polymap-background.svg" alt="">
+                    </div>
+                    <section class="bg-primary-shade-color rounded-[20px] p-10">
+                        <div class="rounded-2xl">
+                            <img src="./public/assets/card-img-1.jpg" alt="3d model">
+                        </div>
+                        <div>
+                            <p  class="font-ubuntu font-bold text-black text-2xl mt-11 after:block after:w-[200px] after:h-[7px] after:bg-primary-color">Náš proces objednávky</p>
+                        </div>
+                        <ul class="list-disc mt-4">
+                            <li class=" text-black font-ubuntu text-lg ml-6 mt-2">Dlžla tlače 2-4h</li>
+                            <li class=" text-black font-ubuntu text-lg ml-6 mt-2">Cena: 4-7€</li>
+                            <li class=" ml-6 mt-2"><a href="" class="text-black font-ubuntu text-lg underline decoration-solid">Tvorca</a></li>
+                        </ul>
+                    </section>
+                    <section class="bg-primary-shade-color rounded-[20px] p-10">
+                        <div class="rounded-2xl">
+                            <img src="./public/assets/card-img-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="font-ubuntu font-bold text-black text-2xl mt-11 after:block after:w-[200px] after:h-[7px] after:bg-primary-color">Kvetník Mirage CSGO</p>
+                        </div>
+                        <ul class="list-disc mt-4">
+                            <li class=" text-black font-ubuntu text-lg ml-6 mt-2">Dlžla tlače 23h</li>
+                            <li class=" text-black font-ubuntu text-lg ml-6 mt-2">Cena: 30€</li>
+                            <li class=" ml-6 mt-2"><a href="" class="text-black font-ubuntu text-lg underline decoration-solid">Tvorca</a></li>
+                        </ul>
+                    </section>
+                    <section class="bg-primary-shade-color rounded-[20px] p-10">
+                        <div class="rounded-2xl">
+                            <img src="./public/assets/card-img-3.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="font-ubuntu font-bold text-black text-2xl mt-11 after:block after:w-[200px] after:h-[7px] after:bg-primary-color">Loďka</p>
+                        </div>
+                        <ul class="list-disc mt-4">
+                            <li class=" text-black font-ubuntu text-lg ml-6 mt-2">Dlžla tlače 18h</li>
+                            <li class=" text-black font-ubuntu text-lg ml-6 mt-2">Cena: 25€</li>
+                            <li class=" ml-6 mt-2"><a href="" class="text-black font-ubuntu text-lg underline decoration-solid">Tvorca</a></li>
+                        </ul>
+                    </section>
+                    <section class="bg-primary-shade-color rounded-[20px] p-10">
+                        <div class="rounded-2xl">
+                            <img src="./public/assets/card-img-4.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="font-ubuntu font-bold text-black text-2xl mt-11 after:block after:w-[200px] after:h-[7px] after:bg-primary-color">Kvetník</p>
+                        </div>
+                        <ul class="list-disc mt-4">
+                            <li class=" text-black font-ubuntu text-lg ml-6 mt-2">Dlžla  tlače 14h</li>
+                            <li class=" text-black font-ubuntu text-lg ml-6 mt-2">Cena: 22€</li>
+                            <li class=" ml-6 mt-2"><a href="" class="text-black font-ubuntu text-lg underline decoration-solid">Tvorca</a></li>
+                        </ul>
+                    </section>
+                    <section class="bg-primary-shade-color rounded-[20px] p-10">
+                        <div class="rounded-2xl">
+                            <img src="./public/assets/card-img-5.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="font-ubuntu font-bold text-black text-2xl mt-11 after:block after:w-[200px] after:h-[7px] after:bg-primary-color">Medvedík</p>
+                        </div>
+                        <ul class="list-disc mt-4">
+                            <li class=" text-black font-ubuntu text-lg ml-6 mt-2">Dlžla  tlače 5h</li>
+                            <li class=" text-black font-ubuntu text-lg ml-6 mt-2">Cena: 10€</li>
+                            <li class=" ml-6 mt-2"><a href="" class="text-black font-ubuntu text-lg underline decoration-solid">Tvorca</a></li>
+                        </ul>
+                    </section>
+                    <section class="bg-primary-shade-color rounded-[20px] p-10">
+                        <div class="rounded-2xl">
+                            <img src="./public/assets/card-img-6.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="font-ubuntu font-bold text-black text-2xl mt-11 after:block after:w-[200px] after:h-[7px] after:bg-primary-color">Držiak na disky</p>
+                        </div>
+                        <ul class="list-disc mt-4">
+                            <li class=" text-black font-ubuntu text-lg ml-6 mt-2">Dlžla  tlače 5h</li>
+                            <li class=" text-black font-ubuntu text-lg ml-6 mt-2">Cena: 10€</li>
+                            <li class=" ml-6 mt-2"><a href="" class="text-black font-ubuntu text-lg underline decoration-solid">Tvorca</a></li>
+                        </ul>
+                    </section>
+                </section>
+            </section>
+            <!-- contact -->
+            <section class="relative w-full h-auto mt-36 px-6 lg:px-16 mb-0 lg:mb-28">
+                <h3 class="w-fit h-fit font-ubuntu text-black font-bold border-b-[7px] border-b-primary-color text-[24px] lg:text-[50px]">Vytvoriť objednávku</h3>
+                <section class="relative mt-16 lg:mt-32 grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1">
+                    <section class="relative">
+                        <div class="absolute -z-[1] h-full">
+                            <img class="object-cover h-full" src="./public/assets/polymap-background.svg" alt="">
+                        </div>
+                        <form action="" class="flex flex-col justify-start items-start p-10 bg-primary-shade-color rounded-xl gap-y-7">
+                            <section class="w-full grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 gap-x-6">
+                                <div class="w-full">
+                                    <label for="email" class="font-open-sans text-lg text-black">Email</label>
+                                    <div class="w-full mt-3">
+                                        <input name="email" id="email" type="email" placeholder="example@gmail.com" required class="w-full py-2 px-3 border-solid border-2 border-border-color rounded-lg">
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <label for="mobileNumber" class="font-open-sans text-lg text-black">Mobilné číslo</label>
+                                    <div class="w-full mt-3">
+                                        <input type="text" name="mobileNumber" id="mobileNumber" placeholder="0905 652 596 " required class="w-full py-2 px-3 border-solid border-2 border-border-color rounded-lg">
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="w-full flex flex-col lg:flex-row gap-x-6">
+                                <div class="w-full lg:w-1/4">
+                                    <label for="material" class="font-open-sans text-lg text-black">Materiál</label>
+                                    <div class="w-full mt-3">
+                                        <select name="material" id="material" class="w-full py-2 px-3 border-solid border-2 border-border-color rounded-lg">
+                                            <option value="PLA">PLA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/4">
+                                    <label for="Farba" class="font-open-sans text-lg text-black">Farba</label>
+                                    <div class="w-full mt-3">
+                                        <select name="Farba" id="Farba" class="w-full py-2 px-3 border-solid border-2 border-border-color rounded-lg">
+                                            <option value="Čierna">Čierna</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-1/2">
+                                    <label class="font-open-sans text-lg text-black" for="size">Kvalita</label>
+                                    <div class="w-full mt-3">
+                                        <select name="size" id="size" class="w-full py-2 px-3 border-solid border-2 border-border-color rounded-lg">
+                                            <option value="Standard 0.2mm">Standard 0.2mm </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="w-full">
+                                <label for="file" class="font-open-sans text-lg text-black">Nahraj 3d modely</label>
+                                <div class="flex mt-6 w-full bg-white py-8 px-4 border-solid border-2 border-border-color rounded-lg">
+                                    <label for="file" class="h-fit w-fit bg-primary-shade-color p-6 rounded-lg">
+                                        <img src="./public/assets/plus-circle 1.svg" alt="">
+                                    </label>
+                                    <input class="hidden h-[43px] w-[43px] bg-primary-shade-color p-6 rounded-md" type="file" name="file" id="file">
+                                </div>
+                            </section>
+                            <section class="w-full flex flex-col">
+                                <label for="textarea" class="font-open-sans text-lg text-black">Dodatočný text k 3d modelom</label>
+                                <div class="h-20">
+                                    <textarea name="textarea" id="textarea" cols="30" rows="10" class="w-full h-full  mt-6 bg-white py-4 px-4 border-solid border-2 border-border-color rounded-lg"></textarea>
+                                </div>
+                            </section>
+                            <section class="w-full mt-6">
+                                <button type="submit" class="w-full py-2 bg-primary-color font-open-sans text-lg text-white rounded-xl">Vytvoriť nezáväznú objednávku</button>
+                            </section>
+                        </form>
+                    </section>
+                    <section class="relative h-auto lg:h-full">
+                        <img class="w-full h-full object-contain" src="./public/assets/kontakt-svg.svg" alt="">
+                    </section>
+                </section>
+            </section>
+        </main>
+    </div>
+    <script src="./src/script/main.js"></script>
+</body>
+</html>
